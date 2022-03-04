@@ -5,7 +5,7 @@ Asynchronous api wrapper for the disposable email service [gpa.lu](https://gpa.l
 ## Installation
 
 ```
-pip install gpa.lu
+pip install --upgrade gpa.lu
 ```
 
 ## Usage example
