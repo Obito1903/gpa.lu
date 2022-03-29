@@ -13,7 +13,7 @@ class HTTP:
         loop: Optional[AbstractEventLoop] = None,
     ) -> None:
         self.loop = loop or get_event_loop()
-        self.session = session or ClientSession(loop=loop)
+        self.session = session or ClientSession(loop=loop, connector=aiohttp.TCPConnector(verify_ssl=False))
 
     async def close(self) -> None:
         await self.session.close()
